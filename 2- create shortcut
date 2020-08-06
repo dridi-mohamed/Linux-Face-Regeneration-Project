@@ -1,0 +1,31 @@
+#!/bin/bash
+
+
+# Go to the work folder
+
+cd /home/ia/.local/bin
+
+# Run face detcation test
+
+face_detection /home/ia/Desktop/peaples-faces/ > face-detect
+
+# output 
+
+#/home/ia/Desktop/test-faces/marcon.jpg,93,203,217,79
+#/home/ia/Desktop/test-faces/trump.PNG,65,169,169,65
+#/home/ia/Desktop/test-faces/Merkel.jpg,403,820,938,285
+#/home/ia/Desktop/test-faces/potin.PNG,79,148,203,24
+
+
+# cut lines and take jsut names
+
+cut -b 13-19 face-detect  > names
+
+# cut agien
+
+cut -d "/" -f 2   names  >  fina-stap.txt
+
+# Final Step move file to Desktop
+
+cp final.txt   /home/ia/Desktop
+
