@@ -1,0 +1,62 @@
+# now we check using the if stament with shell scripting 
+
+
+
+
+agent1=$(cat "$file"| sed '1!d')        #the output of 'cat $file' is assigned to the $name variable
+agent2=$(cat "$file"| sed '2!d')
+agent3=$(cat "$file"| sed '3!d')
+agent4=$(cat "$file"| sed '4!d')
+
+
+### test varibles ###
+echo $agent1
+echo $agent2
+echo $agent3
+echo $agent4
+
+
+####### if ##########
+
+#------------------ hamdi ----------------- #
+
+
+
+
+
+if [ $agent1 = "hamdo" ]
+
+then
+    echo $agent1 " is prisent"
+else
+    echo $agent1 "absent"
+fi
+
+# ------------ ali -------------- #
+
+if [ $agent2 = "ali" ]
+
+then
+    echo $agent2 " is prisent"
+else
+    echo $agent2 "absent"
+fi
+
+# ------------- wiis ---------- #
+
+if [ $agent3 = "wiss" ]
+then
+    echo $agent3 " is prisent"
+else
+    echo $agent3 "absent"
+fi
+
+# -------------- achref --------------- #
+
+if [ $agent4 = "achref" ]
+
+then
+    echo $agent4 " is prisent"
+else
+    echo $agent4 "absent"
+fi
