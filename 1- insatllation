@@ -1,0 +1,15 @@
+# First we need to install same packages :
+
+#Python and PIP
+apt install python3 pip3
+
+# Face recagnation liberyes 
+sudo apt-get update
+sudo apt-get face_recognition
+sudo apt-get dlib
+sudo apt-get face_detection
+sudo apt-get opencv
+
+
+
+
