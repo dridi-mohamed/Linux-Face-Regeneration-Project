@@ -1,5 +1,7 @@
 # now we check using the if stament with shell scripting 
 
+file="/home/ia/Desktop/test-varibles/final.txt" #the file where you keep your string name
+
 
 
 
